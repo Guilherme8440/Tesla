@@ -1,0 +1,61 @@
+body, html {
+margin: 0%;
+padding: 0%;
+background-image:url(/img/teslagif2.gif) ;
+}
+.wrapper {
+height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+perspective: 2px;
+transform-style: preserve-3d;
+}
+.secao {
+margin: px;
+position: relative;
+height: 100vh;
+min-height: 700px;
+transform-style: inherit;
+}
+.secao::before{ 
+content:" " ;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -10;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+transform: translatez(-1px) scale(1.5);
+}
+.conteudo {
+position: absolute;
+top: 25%;
+width: 100%;
+padding: 50px 1000px;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font-size: 22px;
+text-align: justify;
+left: 50%;
+transform: translate(-50%);
+box-shadow: 3px 3px 3px #b92d2d00;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+p{ 
+    padding: 50px;
+}
+.fundo1::before{
+background-image: url(/img/4tesla.jpg);
+
+
+}
+.fundo2::before{
+background-image: url(/img/tesla12.webp);
+width: 100%;
+margin-top: 450px;
+}
